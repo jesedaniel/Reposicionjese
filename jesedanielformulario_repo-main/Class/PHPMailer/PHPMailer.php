@@ -114,12 +114,7 @@ class PHPMailer
     public $AltBody = '';
 
     /**
-     * An iCal message part body.
-     * Only supported in simple alt or alt_inline message types
-     * To generate iCal event structures, use classes like EasyPeasyICS or iCalcreator.
-     *
-     * @see http://sprain.ch/blog/downloads/php-class-easypeasyics-create-ical-files-with-php/
-     * @see http://kigkonsult.se/iCalcreator/
+   
      *
      * @var string
      */
@@ -197,12 +192,7 @@ class PHPMailer
     public $Hostname = '';
 
     /**
-     * An ID to be used in the Message-ID header.
-     * If empty, a unique id will be generated.
-     * You can set your own, but it must be in the format "<id@domain>",
-     * as defined in RFC5322 section 3.6.4 or it will be ignored.
-     *
-     * @see https://tools.ietf.org/html/rfc5322#section-3.6.4
+     * 
      *
      * @var string
      */
@@ -217,14 +207,7 @@ class PHPMailer
     public $MessageDate = '';
 
     /**
-     * SMTP hosts.
-     * Either a single hostname or multiple semicolon-delimited hostnames.
-     * You can also specify a different port
-     * for each host by using this format: [hostname:port]
-     * (e.g. "smtp1.example.com:25;smtp2.example.com").
-     * You can also specify encryption type, for example:
-     * (e.g. "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").
-     * Hosts will be tried in order.
+  
      *
      * @var string
      */
@@ -402,10 +385,6 @@ class PHPMailer
 
     /**
      * Whether to generate VERP addresses on send.
-     * Only applicable when sending via SMTP.
-     *
-     * @see https://en.wikipedia.org/wiki/Variable_envelope_return_path
-     * @see http://www.postfix.org/VERP_README.html Postfix VERP info
      *
      * @var bool
      */
